@@ -1,0 +1,10 @@
+{
+    "name": "Mars4",
+    "version": "1.0.0",
+    "manifest_version": 1,
+    "project_type": "application",
+    "executable_type": "scratch",
+    "executable": "Mars4.xml",
+    "author": "SouryaJade",
+    "minimum_firmware_version": 42
+}
