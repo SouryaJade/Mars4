@@ -1,6 +1,11 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="controls_whileUntil" id="254" inline="false" x="250" y="0">
     <field name="MODE">WHILE</field>
+    <value name="NUMBER">
+      <block type="sensor_object" id="303">
+        <field name="OBJECT">RIGHTFRONT</field>
+      </block>
+    </value>
     <statement name="DO">
       <block type="movement_forward" id="138">
         <next>
@@ -15,6 +20,16 @@
                 <field name="NUM">98</field>
               </block>
             </value>
+            <next>
+              <block type="oled_color" id="379">
+                <field name="OBJECT">GREEN</field>
+                <next>
+                  <block type="led_select" id="319" inline="true">
+                    <field name="ACTION">FLASH</field>
+                  </block>
+                </next>
+              </block>
+            </next>
           </block>
         </next>
       </block>
