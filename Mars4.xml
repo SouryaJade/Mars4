@@ -26,6 +26,20 @@
                 <next>
                   <block type="led_select" id="319" inline="true">
                     <field name="ACTION">FLASH</field>
+                    <next>
+                      <block type="movement_setmotors" id="434" inline="true">
+                        <value name="BOTHMOVLEFT">
+                          <block type="sensor_spectrometer" id="424">
+                            <field name="LIGHT">GREEN</field>
+                          </block>
+                        </value>
+                        <value name="BOTHMOVRIGHT">
+                          <block type="sensor_spectrometer" id="448">
+                            <field name="LIGHT">GREEN</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
                   </block>
                 </next>
               </block>
