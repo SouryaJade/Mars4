@@ -1,18 +1,23 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="138" x="209" y="14">
-    <next>
-      <block type="movement_setmotors" id="212" inline="true">
-        <value name="BOTHMOVLEFT">
-          <block type="math_number" id="219">
-            <field name="NUM">99</field>
+  <block type="controls_whileUntil" id="254" inline="false" x="180" y="-19">
+    <field name="MODE">WHILE</field>
+    <statement name="DO">
+      <block type="movement_forward" id="138">
+        <next>
+          <block type="movement_setmotors" id="212" inline="true">
+            <value name="BOTHMOVLEFT">
+              <block type="math_number" id="219">
+                <field name="NUM">99</field>
+              </block>
+            </value>
+            <value name="BOTHMOVRIGHT">
+              <block type="math_number" id="226">
+                <field name="NUM">98</field>
+              </block>
+            </value>
           </block>
-        </value>
-        <value name="BOTHMOVRIGHT">
-          <block type="math_number" id="226">
-            <field name="NUM">98</field>
-          </block>
-        </value>
+        </next>
       </block>
-    </next>
+    </statement>
   </block>
 </xml>
