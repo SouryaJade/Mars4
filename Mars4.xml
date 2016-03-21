@@ -1,40 +1,40 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="254" inline="false" x="250" y="0">
+  <block type="controls_whileUntil" id="1" inline="false" x="250" y="0">
     <field name="MODE">WHILE</field>
     <value name="NUMBER">
-      <block type="sensor_object" id="303">
+      <block type="sensor_object" id="2">
         <field name="OBJECT">RIGHTFRONT</field>
       </block>
     </value>
     <statement name="DO">
-      <block type="movement_forward" id="138">
+      <block type="movement_forward" id="3">
         <next>
-          <block type="movement_setmotors" id="212" inline="true">
+          <block type="movement_setmotors" id="4" inline="true">
             <value name="BOTHMOVLEFT">
-              <block type="math_number" id="219">
+              <block type="math_number" id="5">
                 <field name="NUM">99</field>
               </block>
             </value>
             <value name="BOTHMOVRIGHT">
-              <block type="math_number" id="226">
+              <block type="math_number" id="6">
                 <field name="NUM">98</field>
               </block>
             </value>
             <next>
-              <block type="oled_color" id="379">
+              <block type="oled_color" id="7">
                 <field name="OBJECT">GREEN</field>
                 <next>
-                  <block type="led_select" id="319" inline="true">
+                  <block type="led_select" id="8" inline="true">
                     <field name="ACTION">FLASH</field>
                     <next>
-                      <block type="movement_setmotors" id="434" inline="true">
+                      <block type="movement_setmotors" id="9" inline="true">
                         <value name="BOTHMOVLEFT">
-                          <block type="sensor_spectrometer" id="424">
+                          <block type="sensor_spectrometer" id="10">
                             <field name="LIGHT">GREEN</field>
                           </block>
                         </value>
                         <value name="BOTHMOVRIGHT">
-                          <block type="sensor_spectrometer" id="448">
+                          <block type="sensor_spectrometer" id="11">
                             <field name="LIGHT">GREEN</field>
                           </block>
                         </value>
