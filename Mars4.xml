@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="1" inline="false" x="122" y="66">
+  <block type="controls_whileUntil" id="1" inline="false" x="387" y="186">
     <field name="MODE">WHILE</field>
     <value name="NUMBER">
       <block type="sensor_object" id="2">
@@ -26,6 +26,11 @@
                 <next>
                   <block type="led_select" id="8" inline="true">
                     <field name="ACTION">FLASH</field>
+                    <value name="LED">
+                      <block type="sensor_light" id="79">
+                        <field name="LIGHT">REAR</field>
+                      </block>
+                    </value>
                     <next>
                       <block type="movement_setmotors" id="9" inline="true">
                         <value name="BOTHMOVLEFT">
@@ -48,5 +53,8 @@
         </next>
       </block>
     </statement>
+    <next>
+      <block type="movement_stop" id="89"></block>
+    </next>
   </block>
 </xml>
