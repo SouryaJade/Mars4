@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="1" inline="false" x="387" y="186">
+  <block type="controls_whileUntil" id="1" inline="false" x="140" y="122">
     <field name="MODE">WHILE</field>
     <value name="NUMBER">
       <block type="sensor_object" id="2">
@@ -9,40 +9,49 @@
     <statement name="DO">
       <block type="movement_forward" id="3">
         <next>
-          <block type="movement_setmotors" id="4" inline="true">
-            <value name="BOTHMOVLEFT">
-              <block type="math_number" id="5">
-                <field name="NUM">99</field>
-              </block>
-            </value>
-            <value name="BOTHMOVRIGHT">
-              <block type="math_number" id="6">
-                <field name="NUM">98</field>
+          <block type="robot_delay" id="58" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="65">
+                <field name="NUM">3750</field>
               </block>
             </value>
             <next>
-              <block type="oled_color" id="7">
-                <field name="OBJECT">GREEN</field>
+              <block type="movement_setmotors" id="4" inline="true">
+                <value name="BOTHMOVLEFT">
+                  <block type="math_number" id="5">
+                    <field name="NUM">99</field>
+                  </block>
+                </value>
+                <value name="BOTHMOVRIGHT">
+                  <block type="math_number" id="6">
+                    <field name="NUM">98</field>
+                  </block>
+                </value>
                 <next>
-                  <block type="led_select" id="8" inline="true">
-                    <field name="ACTION">FLASH</field>
-                    <value name="LED">
-                      <block type="sensor_light" id="9">
-                        <field name="LIGHT">REAR</field>
-                      </block>
-                    </value>
+                  <block type="oled_color" id="7">
+                    <field name="OBJECT">GREEN</field>
                     <next>
-                      <block type="movement_setmotors" id="10" inline="true">
-                        <value name="BOTHMOVLEFT">
-                          <block type="sensor_spectrometer" id="11">
-                            <field name="LIGHT">GREEN</field>
+                      <block type="led_select" id="8" inline="true">
+                        <field name="ACTION">FLASH</field>
+                        <value name="LED">
+                          <block type="sensor_light" id="9">
+                            <field name="LIGHT">REAR</field>
                           </block>
                         </value>
-                        <value name="BOTHMOVRIGHT">
-                          <block type="sensor_spectrometer" id="12">
-                            <field name="LIGHT">GREEN</field>
+                        <next>
+                          <block type="movement_setmotors" id="10" inline="true">
+                            <value name="BOTHMOVLEFT">
+                              <block type="sensor_spectrometer" id="11">
+                                <field name="LIGHT">GREEN</field>
+                              </block>
+                            </value>
+                            <value name="BOTHMOVRIGHT">
+                              <block type="sensor_spectrometer" id="12">
+                                <field name="LIGHT">GREEN</field>
+                              </block>
+                            </value>
                           </block>
-                        </value>
+                        </next>
                       </block>
                     </next>
                   </block>
