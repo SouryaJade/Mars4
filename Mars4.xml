@@ -27,19 +27,19 @@
                   <block type="led_select" id="8" inline="true">
                     <field name="ACTION">FLASH</field>
                     <value name="LED">
-                      <block type="sensor_light" id="79">
+                      <block type="sensor_light" id="9">
                         <field name="LIGHT">REAR</field>
                       </block>
                     </value>
                     <next>
-                      <block type="movement_setmotors" id="9" inline="true">
+                      <block type="movement_setmotors" id="10" inline="true">
                         <value name="BOTHMOVLEFT">
-                          <block type="sensor_spectrometer" id="10">
+                          <block type="sensor_spectrometer" id="11">
                             <field name="LIGHT">GREEN</field>
                           </block>
                         </value>
                         <value name="BOTHMOVRIGHT">
-                          <block type="sensor_spectrometer" id="11">
+                          <block type="sensor_spectrometer" id="12">
                             <field name="LIGHT">GREEN</field>
                           </block>
                         </value>
@@ -54,7 +54,7 @@
       </block>
     </statement>
     <next>
-      <block type="movement_stop" id="89"></block>
+      <block type="movement_stop" id="13"></block>
     </next>
   </block>
 </xml>
