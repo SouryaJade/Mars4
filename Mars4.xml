@@ -1,68 +1,68 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_repeat" id="232" inline="true" x="147" y="-279">
+  <block type="controls_repeat" id="1" inline="true" x="147" y="-279">
     <value name="TIMES">
-      <block type="math_number" id="240">
+      <block type="math_number" id="2">
         <field name="NUM">2</field>
       </block>
     </value>
     <statement name="DO">
-      <block type="movement_forward" id="2">
+      <block type="movement_forward" id="3">
         <next>
-          <block type="led_select" id="444" inline="true">
+          <block type="led_select" id="4" inline="true">
             <field name="ACTION">ON</field>
             <value name="LED">
-              <block type="math_number" id="555">
+              <block type="math_number" id="5">
                 <field name="NUM">1</field>
               </block>
             </value>
             <next>
-              <block type="led_select" id="520" inline="true">
+              <block type="led_select" id="6" inline="true">
                 <field name="ACTION">ON</field>
                 <value name="LED">
-                  <block type="math_number" id="562">
+                  <block type="math_number" id="7">
                     <field name="NUM">2</field>
                   </block>
                 </value>
                 <next>
-                  <block type="led_select" id="529" inline="true">
+                  <block type="led_select" id="8" inline="true">
                     <field name="ACTION">ON</field>
                     <value name="LED">
-                      <block type="math_number" id="600">
+                      <block type="math_number" id="9">
                         <field name="NUM">3</field>
                       </block>
                     </value>
                     <next>
-                      <block type="led_select" id="538" inline="true">
+                      <block type="led_select" id="10" inline="true">
                         <field name="ACTION">ON</field>
                         <value name="LED">
-                          <block type="math_number" id="607">
+                          <block type="math_number" id="11">
                             <field name="NUM">4</field>
                           </block>
                         </value>
                         <next>
-                          <block type="led_select" id="547" inline="true">
+                          <block type="led_select" id="12" inline="true">
                             <field name="ACTION">ON</field>
                             <value name="LED">
-                              <block type="math_number" id="614">
+                              <block type="math_number" id="13">
                                 <field name="NUM">5</field>
                               </block>
                             </value>
                             <next>
-                              <block type="robot_delay" id="3" inline="true">
+                              <block type="robot_delay" id="14" inline="true">
                                 <value name="DELAY">
-                                  <block type="math_number" id="4">
+                                  <block type="math_number" id="15">
                                     <field name="NUM">3800</field>
                                   </block>
                                 </value>
                                 <next>
-                                  <block type="movement_setmotors" id="5" inline="true">
+                                  <block type="movement_setmotors" id="16" inline="true">
                                     <value name="BOTHMOVLEFT">
-                                      <block type="math_number" id="6">
+                                      <block type="math_number" id="17">
                                         <field name="NUM">99</field>
                                       </block>
                                     </value>
                                     <value name="BOTHMOVRIGHT">
-                                      <block type="math_number" id="7">
+                                      <block type="math_number" id="18">
                                         <field name="NUM">98</field>
                                       </block>
                                     </value>
@@ -83,7 +83,7 @@
       </block>
     </statement>
     <next>
-      <block type="movement_stop" id="9"></block>
+      <block type="movement_stop" id="19"></block>
     </next>
   </block>
 </xml>
